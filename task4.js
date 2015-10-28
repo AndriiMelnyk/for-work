@@ -1,13 +1,15 @@
-var array_task3 = [1,2,3,4,5,6,6,22,27,7,8,2323,8,232,89,98,9];
+var array_task3 = [1,2,3,4,5,6,6,22,27,7,8,2,8,232,2,98,2];
 
-function s_arr(array_task3) {
-    for (var i = 1; i < array_task3.length; i++) {
-        if (array_task3[i]===22) {
-            console.log("true",i+1);
-        } else {
-	      	console.log("false");
+function parseArray(array, number) {
+	var counter = 0;
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] === number) {
+            counter = counter + 1;
         }
     }
+    if (counter > 0) {
+    	console.log('This number count is ' + counter);
+    } 
 }
 
-s_arr(array_task3);
+parseArray(array_task3, 2);
